@@ -1,6 +1,8 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import Header from './components/header/index.vue';
+const app =  createApp(App);
+
+app.component('app-header',Header);
+app.mount('#app')
